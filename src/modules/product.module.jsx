@@ -70,23 +70,23 @@ const Product = () => {
           <div className="flex flex-row gap-2">
             <div className="flex relative flex-col">
               <div className="border border-black-500 w-[75px] mb-sm rounded hover:opacity-75">
-                <img src="../src/assets/images/shirt2.png" />
+                <img src="https://raw.githubusercontent.com/suriagadiego/outline-co-fe/e2824490fa267fab2bfd37a75531807d5d149821/src/assets/images/shirt2.png" />
               </div>
               <div className="border border-black-500 w-[75px] mb-sm rounded hover:opacity-75">
-                <img src="../src/assets/images/shirt2.png" />
+                <img src="https://raw.githubusercontent.com/suriagadiego/outline-co-fe/e2824490fa267fab2bfd37a75531807d5d149821/src/assets/images/shirt2.png" />
               </div>
               <div className="border border-black-500 w-[75px] mb-sm rounded hover:opacity-75">
-                <img src="../src/assets/images/shirt2.png" />
+                <img src="https://raw.githubusercontent.com/suriagadiego/outline-co-fe/e2824490fa267fab2bfd37a75531807d5d149821/src/assets/images/shirt2.png" />
               </div>
               <div className="border border-black-500 w-[75px] mb-sm rounded hover:opacity-75">
-                <img src="../src/assets/images/shirt2.png" />
+                <img src="https://raw.githubusercontent.com/suriagadiego/outline-co-fe/e2824490fa267fab2bfd37a75531807d5d149821/src/assets/images/shirt2.png" />
               </div>
               <div className="border border-black-500 w-[75px] mb-sm rounded hover:opacity-75">
-                <img src="../src/assets/images/shirt2.png" />
+                <img src="https://raw.githubusercontent.com/suriagadiego/outline-co-fe/e2824490fa267fab2bfd37a75531807d5d149821/src/assets/images/shirt2.png" />
               </div>
             </div>
             <div className="flex flex-col justify-center items-center px-md">
-              <img src="../src/assets/images/shirt2.png" width={400} />
+              <img src="https://raw.githubusercontent.com/suriagadiego/outline-co-fe/e2824490fa267fab2bfd37a75531807d5d149821/src/assets/images/shirt2.png" width={400} />
             </div>
           </div>
         </div>
