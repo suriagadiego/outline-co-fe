@@ -61,7 +61,7 @@ const ProductList = () => {
                                       col-span-1 hover:opacity-80'
                      onClick={() => navigate(`${d.id}`)}>
                     <div className='margin-auto'>
-                        <img src="../src/assets/images/shirt2.png" alt={`Product ${index + 1}`} width={250} height={250}/>
+                        <img src="https://github.com/suriagadiego/outline-co-fe/blob/e2824490fa267fab2bfd37a75531807d5d149821/src/assets/images/shirt2.png" alt={`Product ${index + 1}`} width={250} height={250}/>
                     </div>                    
                     <Text className='block font-semibold uppercase'>{d.product_name}</Text>
                     <Text className='block text-wrap'>{d.description}</Text>
