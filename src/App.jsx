@@ -1,24 +1,27 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Home from "./modules/home.module";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navigation from "./components/navigation";
+import Cart from "./modules/cart.module";
+import Product from "./modules/product.module";
+import Landing from "./modules/landing/landing.module";
+import ProductList from "./modules/product-list.module";
 
 function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <p>Choo Choo! This is an example of a Vite + React app running on Railway.</p>
-      </div>
-    </>
-  )
+    <div className="App">
+      <Navigation />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Landing />}></Route>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/cart" element={<Cart />}></Route>
+          <Route path="/product" element={<ProductList />}></Route>
+          <Route path="/product/:id" element={<Product />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
-export default App
+export default App;
