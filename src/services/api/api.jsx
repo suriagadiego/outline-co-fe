@@ -1,4 +1,4 @@
-const apiServerUrl = "http://127.0.0.1:8000";
+const apiServerUrl = "https://outline-ecom-be-production.up.railway.app";
 import { callExternalApi } from './external-api.service';
 
 export const getProduct = async ( id = '' ) => {
