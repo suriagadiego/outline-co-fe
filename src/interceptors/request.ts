@@ -1,7 +1,7 @@
 // api.ts (or wherever you create the axios instance)
 import axios, { AxiosRequestConfig } from "axios";
 
-const apiServerUrl = 'http://127.0.0.1:8000/';
+const apiServerUrl = 'outline-ecom-be-production.up.railway.app/';
 const api = axios.create({
   baseURL: apiServerUrl,
 });
