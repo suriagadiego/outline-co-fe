@@ -53,14 +53,25 @@ const Product = () => {
   const onDelete = async() => {
     setIsDeleteOpen(false);
     setLoading(true);
-    await deleteProduct(uuid);
-    notification.success({
-          message: 'Success',
-          description: 'Successfully deleted a product.',
-          duration: 3,
+    const res = await deleteProduct(uuid);
+    console.log(res)
+    if (res.error) {
+      notification.error({
+        message: 'Error',
+        description: 'Error: You do not have permission to perform this action.',
+        duration: 3,
       });
-    setLoading(false);
-    navigate('/product');
+      setLoading(false);
+    } else {
+      notification.success({
+        message: 'Success',
+        description: 'Successfully deleted a product.',
+        duration: 3,
+      });
+      setLoading(false);
+      navigate('/product');
+    }
+
   }
 
   return (
