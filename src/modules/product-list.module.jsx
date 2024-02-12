@@ -14,7 +14,7 @@ const ProductList = () => {
     const fetchProductList = async() => {
         const { data } = await getProducts();
         setLoading(false);
-        setData(data.data);
+        setData(data?.data);
     }
 
     useMount(() => {

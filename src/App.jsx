@@ -6,6 +6,7 @@ import Cart from "./modules/cart.module";
 import Product from "./modules/product.module";
 import Landing from "./modules/landing/landing.module";
 import ProductList from "./modules/product-list.module";
+import SignIn from "./modules/sign-in.module";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />}></Route>
+          <Route path="/sign-in" element={<SignIn />}></Route>
           <Route path="/home" element={<Home />}></Route>
           <Route path="/cart" element={<Cart />}></Route>
           <Route path="/product" element={<ProductList />}></Route>

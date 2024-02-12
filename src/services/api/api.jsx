@@ -88,3 +88,22 @@ export const deleteProduct = async (uuid) => {
         error,
     };
 };
+
+export const loginUser = async (body) => {
+    const config = {
+        url: `${apiServerUrl}/api/token/`,
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json',
+        },
+        data: body
+    };
+
+    const { data, error } = await callExternalApi({ config });
+
+    return {
+        data: data || null,
+        error,
+    };
+};
+

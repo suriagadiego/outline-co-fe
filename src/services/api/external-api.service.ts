@@ -1,11 +1,12 @@
 import axios from 'axios';
-import { api } from '../../interceptors/request';
+import { api, setAuthInterceptor } from '../../interceptors/request';
 
 export const callExternalApi = async (options: any) => {
+    const accessToken = localStorage.getItem("access") || ''
+    setAuthInterceptor(accessToken);
     try {
       const response = await api(options.config); // Use the 'api' instance here
       const { data } = response;
-  
       return {
         data,
         error: null,
